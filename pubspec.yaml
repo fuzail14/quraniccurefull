@@ -1,0 +1,227 @@
+name: audioquranic
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  image_picker: ^0.8.5
+  path_provider: ^2.0.9
+  get: ^4.6.1
+  sqflite: ^2.0.2+1
+  fluttertoast: ^8.0.9
+  
+  assets_audio_player: ^3.0.4+3
+  favorite_button: ^0.0.4
+  
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  #flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - images/
+   - assets/SurahAlIkhlas.mp3 
+   - assets/SurahAlKausar.mp3
+   - assets/Sura At Tkathur.mp3
+   - assets/Surah al Ambiya Ayat 69.mp3
+   - assets/Surah al Araaf Ayat 169.mp3
+   - assets/Surah al Araf Ayat 201.mp3
+   - assets/Surah al Asar Ayat 003.mp3
+   - assets/Surah Al Falaq.mp3
+   - assets/Surah al Imran Ayat 134.mp3
+   - assets/Surah al Imran Ayat 148.mp3
+   - assets/Surah al Qamar 017.mp3
+   - assets/Surah Al-Inshirah.mp3
+   - assets/Surah An Nasr.mp3
+   - assets/Surah ar Rad Ayat 28.mp3
+   - assets/Surah Fatiha.mp3
+   - assets/Surah Luqman Ayat 26.mp3
+   - assets/Surah Nas Ayat 1.mp3
+   - assets/Surah Nas.mp3
+   - assets/Surah Nisa Ayat 090.mp3
+   - assets/Surah Noor Ayat 008.mp3
+   - assets/Surah Qaf Ayat 022.mp3
+   - assets/Surah Qamar Ayat 049.mp3
+   - assets/Surah Quraish.mp3
+   - assets/Surah Tauba Ayat 109.mp3
+   - assets/Surah ul Aala Ayat007.mp3
+   - assets/112001.mp3
+   - assets/112002.mp3
+   - assets/112003.mp3
+   - assets/112004.mp3
+   - assets/108001.mp3
+   - assets/108002.mp3
+   - assets/108003.mp3
+   - assets/110001.mp3
+   - assets/110002.mp3
+   - assets/110003.mp3
+   - assets/111001.mp3
+   - assets/111002.mp3
+   - assets/111003.mp3
+   - assets/111004.mp3
+   - assets/111005.mp3
+   - assets/113001.mp3
+   - assets/113002.mp3
+   - assets/113003.mp3
+   - assets/113004.mp3
+   - assets/113005.mp3
+   - assets/114001.mp3
+   - assets/114002.mp3
+   - assets/114003.mp3
+   - assets/114004.mp3
+   - assets/114005.mp3
+   - assets/114006.mp3
+   - assets/surahnasr.mp3
+   - assets/SurahLahab.mp3
+   - assets/094001.mp3
+   - assets/094002.mp3
+   - assets/094003.mp3
+   - assets/094004.mp3
+   - assets/094005.mp3
+   - assets/094006.mp3
+   - assets/094007.mp3
+   - assets/094008.mp3
+   - assets/095001.mp3
+   - assets/095002.mp3
+   - assets/095003.mp3
+   - assets/095004.mp3
+   - assets/095005.mp3
+   - assets/095006.mp3
+   - assets/095007.mp3
+   - assets/095008.mp3
+   - assets/099001.mp3
+   - assets/099002.mp3
+   - assets/099003.mp3
+   - assets/099004.mp3
+   - assets/099005.mp3
+   - assets/099006.mp3
+   - assets/099007.mp3
+   - assets/099008.mp3
+   - assets/105001.mp3
+   - assets/105002.mp3
+   - assets/105003.mp3
+   - assets/105004.mp3
+   - assets/105005.mp3
+   - assets/100001.mp3
+   - assets/100002.mp3
+   - assets/100003.mp3
+   - assets/100004.mp3
+   - assets/100005.mp3
+   - assets/100006.mp3
+   - assets/100007.mp3
+   - assets/100008.mp3
+   - assets/100009.mp3
+   - assets/100010.mp3
+   - assets/100011.mp3
+   - assets/106001.mp3
+   - assets/106002.mp3
+   - assets/106003.mp3
+   - assets/106004.mp3
+   - assets/107001.mp3
+   - assets/107002.mp3
+   - assets/107003.mp3
+   - assets/107004.mp3
+   - assets/107005.mp3
+   - assets/107006.mp3
+   - assets/107007.mp3
+   - assets/095001.mp3
+   - assets/095002.mp3
+   - assets/095003.mp3
+   - assets/095004.mp3
+   - assets/095005.mp3
+   - assets/095006.mp3
+   - assets/095007.mp3
+   - assets/095008.mp3
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+   
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
